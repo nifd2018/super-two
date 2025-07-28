@@ -4,6 +4,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* 关键：改为垂直排列 */
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* 与计算器同宽 */
+}
+
 body {
     background: linear-gradient(to right, #3a7bd5, #00d2ff);
     display: flex;
@@ -83,21 +91,21 @@ button[data-operation]:hover {
     background-color: #ffaa33;
 }
 
-/* 在原有CSS文件末尾添加以下代码 */
 .image-container {
     margin-top: 30px;
+    width: 100%;
     text-align: center;
-    max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
-    display: block;
+    border-radius: 10px;
 }
+
 
 @media (max-width: 480px) {
     .image-container {

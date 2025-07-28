@@ -98,3 +98,10 @@ button[data-operation]:hover {
     height: auto;
     display: block;
 }
+
+@media (max-width: 480px) {
+    .image-container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}

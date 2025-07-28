@@ -82,3 +82,19 @@ button[data-operation] {
 button[data-operation]:hover {
     background-color: #ffaa33;
 }
+
+/* 在原有CSS文件末尾添加以下代码 */
+.image-container {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
